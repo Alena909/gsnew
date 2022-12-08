@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+
+import Navigation from "./routes/navigation/navigation.component";
+import Home from "./routes/home/home.component";
+import Activities from "./routes/activities/activities.component";
+import Newsletter from "./routes/newsletter/newsletter.component";
+import CookieInfo from "./routes/cookie-info/cookie-info.component";
+import Volunteer from "./routes/volunteer/volunteer.component";
+import About from "./routes/about/about.component";
+import Login from "./routes/login/login.component";
+import SlidingCard from "./components/sliding-card/sliding-card.component";
+import Gallery from "./components/gallery/gallery.component";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/cookie-info" element={<CookieInfo />} />
+        <Route path="/volunteer" element={<Volunteer />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/card" element={<SlidingCard />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Route>
+    </Routes>
   );
 }
 
