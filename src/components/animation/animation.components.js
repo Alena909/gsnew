@@ -10,9 +10,7 @@ const Animation = ({ animationLottie, width = 300, height = 300 }) => {
     },
   };
   return (
-    <div>
-      <LottieContainer options={defaultOptions} height={height} width={width} />
-    </div>
+    <LottieContainer options={defaultOptions} height={height} width={width} />
   );
 };
 

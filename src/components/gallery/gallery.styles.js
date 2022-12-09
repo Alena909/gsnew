@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  background-color: #f1f1f1;
+  background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 65vmin;
   height: 80vmin;
+  margin: 0 auto;
 `;
 
 export const ImageCard = styled.div`
@@ -16,9 +17,9 @@ export const ImageCard = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: darken(white, 2%);
+  background-color: #fff;
   border-radius: 2px;
-  box-shadow: 2px 2px 5px rgba(#111, 0.35);
+  box-shadow: 5px 3px 15px grey;
   transition: transform 0.35s ease-out;
   transform: translate(${(props) => props.x}, ${(props) => props.y}) scale(0.35)
     rotate(${(props) => props.angle});
@@ -47,9 +48,9 @@ export const ImageCard = styled.div`
     opacity: 0.5;
     will-change: opacity;
   }
-  :after {
+  &:after {
     display: block;
-    content: ${(props) => props.caption};
+    content: "${(props) => props.caption}";
     font-weight: 500;
     color: #555;
     font-size: 3vmin;

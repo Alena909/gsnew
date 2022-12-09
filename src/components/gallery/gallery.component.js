@@ -7,15 +7,27 @@ import { ImageCard, GalleryContainer } from "./gallery.styles";
 const Gallery = () => {
   return (
     <GalleryContainer>
-      <ImageCard bg={college} caption="college" angle="-5deg" x="5%" y="15%" />
-      <ImageCard bg={amazon} caption="amazon" angle="-1deg" x="-10%" y="-20%" />
-      <ImageCard bg={concert} caption="concert" angle="-4deg" x="-20%" y="5%" />
+      <ImageCard bg={college} caption="college" angle="10deg" x="5%" y="15%" />
+      <ImageCard
+        bg={amazon}
+        caption="amazon"
+        angle="-10deg"
+        x="-10%"
+        y="-20%"
+      />
+      <ImageCard
+        bg={concert}
+        caption="concert"
+        angle="-20deg"
+        x="-20%"
+        y="5%"
+      />
       <ImageCard
         bg={ericsson}
         caption="ericsson"
-        angle="7deg"
-        x="10%"
-        y="-7%"
+        angle="4deg"
+        x="12%"
+        y="-5%"
       />
     </GalleryContainer>
   );
