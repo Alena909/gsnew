@@ -43,8 +43,9 @@ export const NavTitle = styled.h2`
 export const HamburgerContainer = styled.div`
   width: 30px;
   height: 20px;
-  position: relative;
-  margin: 0px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);

@@ -17,7 +17,7 @@ const Home = () => {
       />
       <h1
         style={{
-          zIndex: 4,
+          zIndex: 0,
           position: "absolute",
         }}
       >

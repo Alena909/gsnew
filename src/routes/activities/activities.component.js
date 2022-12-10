@@ -13,29 +13,13 @@ import {
 
 const Activities = () => {
   const [date, setDate] = useState(new Date());
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
 
-  const currMonth = date.getMonth();
   return (
     <ActivitiesContainer>
       <CalendarPageContainer>
-        <h2>{months[currMonth]} Calendar</h2>
+        <h2>Upcoming events</h2>
         <CalendarStyles onChange={setDate} value={date} />
       </CalendarPageContainer>
-      <h2>Upcoming events</h2>
       <Animation animationLottie={comingSoon} />
       <h2>Past events</h2>
       {PAST_EVENT_DATA.map((event) => {

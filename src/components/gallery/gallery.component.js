@@ -4,6 +4,28 @@ import concert from "../../assets/images/concert.jpg";
 import ericsson from "../../assets/images/ericsson.jpg";
 
 import { ImageCard, GalleryContainer } from "./gallery.styles";
+const imageLayout = [
+  {
+    angle: "10deg",
+    x: "5%",
+    y: "15%",
+  },
+  {
+    angle: "-10deg",
+    x: "-10%",
+    y: "-20%",
+  },
+  {
+    angle: "-20deg",
+    x: "-20%",
+    y: "5%",
+  },
+  {
+    angle: "4deg",
+    x: "12%",
+    y: "-5%",
+  },
+];
 const Gallery = () => {
   return (
     <GalleryContainer>

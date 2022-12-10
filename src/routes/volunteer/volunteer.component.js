@@ -8,6 +8,7 @@ import {
   CustomDatePicker,
   VolunteerInfo,
 } from "./volunteer.styles";
+import volunteerImage from "../../assets/images/volunteer.png";
 const Volunteer = () => {
   const [startDate, setStartDate] = useState(new Date());
   const filterPassedTime = (time) => {
@@ -33,6 +34,11 @@ const Volunteer = () => {
     <VolunteerContainer>
       <VolunteerInfo>
         <h1>Volunteer</h1>
+        <img
+          src={volunteerImage}
+          alt="helping hands"
+          style={{ width: "100%" }}
+        />
         <p>
           We are a group of fun, energetic and goal-oriented girls looking for
           opportunities to give back to our community.

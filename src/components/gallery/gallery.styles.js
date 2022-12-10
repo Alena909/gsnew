@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  background-color: aliceblue;
+  //background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
