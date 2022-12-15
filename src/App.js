@@ -9,7 +9,6 @@ import Volunteer from "./routes/volunteer/volunteer.component";
 import About from "./routes/about/about.component";
 import Login from "./routes/login/login.component";
 import SlidingCard from "./components/sliding-card/sliding-card.component";
-import Gallery from "./components/gallery/gallery.component";
 
 import "./App.css";
 
@@ -25,7 +24,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/card" element={<SlidingCard />} />
-        <Route path="/gallery" element={<Gallery />} />
       </Route>
     </Routes>
   );

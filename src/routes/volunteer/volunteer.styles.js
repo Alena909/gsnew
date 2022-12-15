@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
+import { GlobalStyles } from "@mui/styled-engine";
 
 export const VolunteerContainer = styled.div`
   display: flex;

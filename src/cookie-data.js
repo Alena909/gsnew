@@ -46,7 +46,7 @@ const COOKIE_DATA = [
     count: "Approximately 15 cookies per 7.5 oz. pkg",
     price: "$5",
     id: 5,
-    color: "rgba(82,0,128,0.7)",
+    color: "rgba(82,0,128,0.55)",
   },
   {
     name: "Tagalongs®",
@@ -75,7 +75,7 @@ const COOKIE_DATA = [
     count: "Approximately 16 cookies per 8.5 oz. pkg",
     price: "$6",
     id: 8,
-    color: "rgba(72,9,9,0.8)",
+    color: "rgba(72, 9, 9, 0.51)",
   },
   {
     name: "Toffee-tastic®",
@@ -94,7 +94,7 @@ const COOKIE_DATA = [
     count: "Approximately 30 cookies per 9 oz. pkg.",
     price: "$5",
     id: 10,
-    color: "rgba(171,44,93,0.97)",
+    color: "rgba(215, 102, 145, 0.97)",
   },
 ];
 export default COOKIE_DATA;

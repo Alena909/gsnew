@@ -14,14 +14,14 @@
   z-index: 3;
   position: relative;
 }
-h1 {
+.flowerTitle {
   position: absolute;
   top: 30%;
   left: 40%;
   animation: show 3s ease-in;
 }
 
-img {
+.flower {
   height: 50px;
   width: 50px;
   z-index: 2;
@@ -140,7 +140,7 @@ img {
     height: 300px;
   }
 
-  img {
+  .flower {
     height: 100px;
     width: 100px;
   }
@@ -151,13 +151,13 @@ img {
     height: 450px;
   }
 
-  img {
+  .flower {
     height: 150px;
     width: 150px;
   }
 }
 @media only screen and (max-width: 768px) {
-  h1 {
+  .flowerTitle {
     top: 10%;
     left: 20%;
   }

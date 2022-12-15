@@ -17,11 +17,13 @@ const Activities = () => {
   return (
     <ActivitiesContainer>
       <CalendarPageContainer>
-        <h2>Upcoming events</h2>
+        <h2 style={{ color: " #38a295" }}>Upcoming events</h2>
         <CalendarStyles onChange={setDate} value={date} />
       </CalendarPageContainer>
       <Animation animationLottie={comingSoon} />
-      <h2>Past events</h2>
+
+      <h2 style={{ color: " #38a295" }}>Past events</h2>
+
       {PAST_EVENT_DATA.map((event) => {
         return <Activity key={event.id} eventDetails={event} />;
       })}

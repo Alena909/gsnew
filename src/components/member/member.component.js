@@ -1,11 +1,6 @@
+import { MemberName } from "./member.styles";
 const Member = ({ name }) => {
-  return (
-    <div>
-      <h2>{name}</h2>
-      <img alt="member" />
-      <p>description</p>
-    </div>
-  );
+  return <MemberName>{name}</MemberName>;
 };
 
 export default Member;

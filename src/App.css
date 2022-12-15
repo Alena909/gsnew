@@ -27,6 +27,9 @@
 .App-link {
   color: #61dafb;
 }
+.react-datepicker-popper {
+  z-index: 2;
+}
 
 @keyframes App-logo-spin {
   from {
