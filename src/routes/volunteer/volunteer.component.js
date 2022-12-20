@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
@@ -8,6 +8,7 @@ import { Typography } from "@material-ui/core";
 import TextField from "@mui/material/TextField";
 import FormLabel from "@mui/material/FormLabel";
 import Button from "@mui/material/Button";
+
 import { FormContainer } from "../login/login.styles";
 import {
   VolunteerContainer,
@@ -18,8 +19,6 @@ import volunteerImage from "../../assets/images/volunteer.png";
 
 const Volunteer = () => {
   const [startDate, setStartDate] = useState(new Date());
-
-  useEffect(() => {}, [startDate]);
 
   const filterPassedTime = (time) => {
     const currentDate = new Date();
@@ -57,13 +56,16 @@ const Volunteer = () => {
     control,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: yupResolver(validationSchema),
   });
 
   const onSubmit = (data) => {
-    console.log(startDate);
+    console.log(data);
     console.log(JSON.stringify(data, null, 2));
+    reset();
+    setStartDate(new Date());
   };
 
   return (
@@ -91,7 +93,6 @@ const Volunteer = () => {
         <FormLabel component="legend" style={{ marginBottom: "10px" }}>
           Select Date and Time
         </FormLabel>
-
         <CustomDatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}

@@ -30,7 +30,7 @@ export const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   :hover {
-    color: black;
+    color: yellow;
   }
 `;
 
