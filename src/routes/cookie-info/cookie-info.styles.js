@@ -5,6 +5,7 @@ export const CookieInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vh;
 `;
 
 export const Cookies = styled.div`

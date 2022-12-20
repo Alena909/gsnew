@@ -23,16 +23,6 @@ const CookieInfo = () => {
           <li>Zero Grams Trans Fat per Serving</li>
           <li>RSPO Certified (Mass Balance) Palm Oil</li>
           <li>Halal Certification</li>
-          <li>
-            <a href="https://www.gsnetx.org/content/dam/NE_Texas/documents/product-sales/cookies/2023_Cookie_Program_Flavor_and_Nutrition_English.pdf">
-              Product information
-            </a>
-          </li>
-          <li>
-            <a href="https://www.gsnetx.org/en/Cookies/cookie-resources.html">
-              sale info
-            </a>
-          </li>
         </ul>
       </div>
     </CookieInfoContainer>

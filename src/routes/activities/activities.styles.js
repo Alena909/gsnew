@@ -10,6 +10,7 @@ export const CalendarContainer = styled.div`
     margin-top: 20px;
     border: 2px solid #38a295;
     box-shadow: 4px 2px 15px grey;
+    z-index: 0;
   }
 
   > div > div .react-datepicker__header {
@@ -22,6 +23,7 @@ export const ActivitiesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vh;
   & h2 {
     color: #38a295;
   }

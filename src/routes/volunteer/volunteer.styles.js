@@ -9,7 +9,8 @@ export const VolunteerContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10vh;
 `;
 
 export const VolunteerInfo = styled.div`
