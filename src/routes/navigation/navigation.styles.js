@@ -105,6 +105,6 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: sticky;
+  position: fixed;
   bottom: 0;
 `;

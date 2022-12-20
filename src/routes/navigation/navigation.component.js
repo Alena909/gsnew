@@ -14,7 +14,6 @@ import {
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(isOpen);
   return (
     <Fragment>
       <NavigationContainer>
@@ -31,7 +30,6 @@ const Navigation = () => {
           <NavLink to="/volunteer">VOLUNTEER</NavLink>
           <NavLink to="/about">ABOUT</NavLink>
           <NavLink to="/login">LOGIN</NavLink>
-          <NavLink to="/card">Card</NavLink>
         </NavLinks>
 
         <NavTitle isOpen={isOpen}>Troop #6789</NavTitle>
