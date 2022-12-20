@@ -1,14 +1,20 @@
-import { ActivityContainer, ActivityImage } from "./activity.styles";
+import { Suspense, lazy } from "react";
+
+import { ActivityContainer, ActivityDescription } from "./activity.styles";
+
+const GalleryLoading = lazy(() => import("../gallery/gallery.component"));
 
 const Activity = ({ eventDetails }) => {
-  const { title, eventImage, eventDescription, date } = eventDetails;
+  const { title, eventImages, eventDescription, date } = eventDetails;
   return (
     <ActivityContainer>
-      <h3>{title}</h3>
-      <ActivityImage alt={title} src={eventImage} />
-      <p>{date}</p>
-      <p>{eventDescription}</p>
-      <hr style={{ width: "10%" }} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <h3 style={{ color: "green" }}>{title}</h3>
+        <GalleryLoading images={eventImages} date={date} />
+
+        <ActivityDescription>{eventDescription}</ActivityDescription>
+        <hr style={{ width: "15%", marginBottom: 25 }} />
+      </Suspense>
     </ActivityContainer>
   );
 };

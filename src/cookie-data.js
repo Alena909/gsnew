@@ -7,7 +7,7 @@ const COOKIE_DATA = [
     count: "Approximately 15 cookies per 6.3 oz. pkg",
     price: "$5",
     id: 1,
-    color: "grey",
+    color: "rgba(128,128,128,0.5)",
   },
   {
     name: "Lemon-Ups®",
@@ -17,7 +17,7 @@ const COOKIE_DATA = [
     count: "Approximately 12 cookies per 6.2 oz. pkg.",
     price: "$5",
     id: 2,
-    color: "yellow",
+    color: "rgba(255,255,0,0.7)",
   },
   {
     name: "Trefoils®",
@@ -27,7 +27,7 @@ const COOKIE_DATA = [
     count: "Approximately 38 cookies per 9 oz. pkg.",
     price: "$5",
     id: 3,
-    color: "blue",
+    color: "rgba(16,135,255,0.9)",
   },
   {
     name: "Do-si-dos®",
@@ -36,7 +36,7 @@ const COOKIE_DATA = [
     count: "Approximately 20 cookies per 8 oz. pkg.",
     price: "$5",
     id: 4,
-    color: "orange",
+    color: "rgba(255,124,0,0.8)",
   },
   {
     name: "Samoas®",
@@ -46,7 +46,7 @@ const COOKIE_DATA = [
     count: "Approximately 15 cookies per 7.5 oz. pkg",
     price: "$5",
     id: 5,
-    color: "purple",
+    color: "rgba(82,0,128,0.55)",
   },
   {
     name: "Tagalongs®",
@@ -56,7 +56,7 @@ const COOKIE_DATA = [
     count: "Approximately 15 cookies per 6.5 oz. pkg",
     price: "$5",
     id: 6,
-    color: "red",
+    color: "rgba(244,3,3,0.8)",
   },
   {
     name: "Thin Mints®",
@@ -65,7 +65,7 @@ const COOKIE_DATA = [
     count: "Approximately 30 cookies per 9 oz. pkg.",
     price: "$5",
     id: 7,
-    color: "green",
+    color: "rgba(0,128,0,0.8)",
   },
   {
     name: "Girl Scout S’mores®",
@@ -75,7 +75,7 @@ const COOKIE_DATA = [
     count: "Approximately 16 cookies per 8.5 oz. pkg",
     price: "$6",
     id: 8,
-    color: "brown",
+    color: "rgba(72, 9, 9, 0.51)",
   },
   {
     name: "Toffee-tastic®",
@@ -84,7 +84,7 @@ const COOKIE_DATA = [
     count: "Approximately 14 cookies per 6.7 oz. pkg.",
     price: "$6",
     id: 9,
-    color: "lightblue",
+    color: "rgba(50,158,171,0.9)",
   },
   {
     name: "Raspberry Rally™",
@@ -94,7 +94,7 @@ const COOKIE_DATA = [
     count: "Approximately 30 cookies per 9 oz. pkg.",
     price: "$5",
     id: 10,
-    color: "pink",
+    color: "rgba(215, 102, 145, 0.97)",
   },
 ];
 export default COOKIE_DATA;

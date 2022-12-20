@@ -1,0 +1,164 @@
+.home-container {
+  margin: 0;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-canvas {
+  width: 250px;
+  height: 150px;
+  border: 1px solid black;
+  z-index: 3;
+  position: relative;
+}
+.flowerTitle {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  animation: show 3s ease-in;
+}
+
+.flower {
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+}
+
+.yellowBL {
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  animation: grow 1s ease-in;
+}
+.yellowTR {
+  position: absolute;
+  top: -18%;
+  right: -2%;
+}
+.yellowBR1 {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  animation: grow 2s ease-in;
+}
+.yellowBR2 {
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+
+  animation: grow 3s ease-in;
+}
+.yellowTL {
+  position: absolute;
+  top: -9%;
+  left: 7%;
+  transform: rotate(60deg);
+}
+.darkTL {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  animation: grow 1s ease-in;
+}
+.darkBR {
+  position: absolute;
+  bottom: -16%;
+  right: -5%;
+  animation: grow 1s ease-in;
+}
+.darkTR {
+  position: absolute;
+  top: 3%;
+  right: -10%;
+
+  animation: grow 1s ease-in;
+}
+.lightTL {
+  position: absolute;
+  top: -20%;
+  left: -8%;
+  animation: grow 2s ease-in;
+}
+.lightBL {
+  position: absolute;
+  bottom: -15%;
+  left: 1%;
+  z-index: 1;
+}
+
+.branchTL {
+  position: absolute;
+  top: -22%;
+  left: -20%;
+  z-index: 1;
+
+  transform: scaleX(-1);
+  animation: show 3s ease-in;
+}
+.branchTR {
+  position: absolute;
+  top: -30%;
+  right: 1%;
+  z-index: 1;
+  transform: rotateZ(303deg);
+  -webkit-box-reflect: below;
+  animation: show 3s ease-in;
+}
+.branchBL {
+  position: absolute;
+  bottom: 0;
+  left: 9%;
+  z-index: 0;
+  -webkit-box-reflect: below;
+  transform: rotateZ(30deg);
+  animation: show 3s ease-in;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-canvas {
+    width: 500px;
+    height: 300px;
+  }
+
+  .flower {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .home-canvas {
+    width: 750px;
+    height: 450px;
+  }
+
+  .flower {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .flowerTitle {
+    top: 10%;
+    left: 20%;
+  }
+}

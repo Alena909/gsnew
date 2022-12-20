@@ -3,13 +3,13 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
 
-
 export const VolunteerContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 85vh;
+  padding-bottom: 10px;
 `;
 
 export const VolunteerInfo = styled.div`

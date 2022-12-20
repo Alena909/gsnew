@@ -32,7 +32,6 @@ const Navigation = () => {
           <NavLink to="/about">ABOUT</NavLink>
           <NavLink to="/login">LOGIN</NavLink>
           <NavLink to="/card">Card</NavLink>
-          <NavLink to="/gallery">gallery</NavLink>
         </NavLinks>
 
         <NavTitle isOpen={isOpen}>Troop #6789</NavTitle>

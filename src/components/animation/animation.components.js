@@ -1,17 +1,7 @@
-import { LottieContainer } from "./animation.styles";
+import Lottie from "lottie-react";
 
 const Animation = ({ animationLottie, width = 300, height = 300 }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationLottie,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-  return (
-    <LottieContainer options={defaultOptions} height={height} width={width} />
-  );
+  return <Lottie animationData={animationLottie} style={{ width, height }} />;
 };
 
 export default Animation;

@@ -1,21 +1,19 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 65vmin;
   height: 80vmin;
-  margin: 0 auto;
 `;
 
 export const ImageCard = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: ${(props) => (props.size === "cover" ? "100%" : "140%")};
   height: 100%;
   background-color: #fff;
   border-radius: 2px;
@@ -26,7 +24,8 @@ export const ImageCard = styled.div`
   will-change: transform;
 
   :hover {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg)
+      translateX(${(props) => (props.size === "contain" ? "-15%" : "0px")});
     z-index: 1;
 
     :before {
@@ -40,7 +39,7 @@ export const ImageCard = styled.div`
     height: 80%;
     margin: 5%;
     background: url(${(props) => props.bg}) center center no-repeat;
-    background-size: cover;
+    background-size: ${(props) => props.size};
     box-shadow: inset 0 0 5px rgba(#222, 0.35);
     border-radius: 2px;
     filter: sepia(0.2) brightness(0.9) contrast(1.2);
@@ -56,5 +55,8 @@ export const ImageCard = styled.div`
     font-size: 3vmin;
     opacity: 0.75;
     text-align: center;
+    @media only screen and (min-width: 400px) {
+      margin-top: ${(props) => (props.size === "cover" ? "0" : "-40px")};
+    }
   }
 `;

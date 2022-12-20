@@ -1,10 +1,10 @@
 import { CardContainer, SlidingImage } from "./sliding-card.styles";
-import coffee from "../../assets/images/coffee.jpg";
+import college from "../../assets/images/thumbnails/cafe_t.jpg";
 const SlidingCard = () => {
   return (
     <CardContainer>
       <div id="main">
-        <SlidingImage src={coffee} alt="coffee"></SlidingImage>
+        <SlidingImage src={college} alt="coffee"></SlidingImage>
       </div>
       <div id="textbois">
         <h2>TBD</h2>
